@@ -1,0 +1,17 @@
+.display-text { font-family: var(--font-display); font-weight: 700; }
+.mono-text { font-family: var(--font-mono); }
+.text-accent { color: var(--accent-yellow); }
+.text-secondary { color: var(--text-secondary); }
+.neon-text-blue { color: var(--accent-blue); text-shadow: var(--neon-glow-blue); }
+.neon-text-pink { color: var(--accent-pink); text-shadow: var(--neon-glow-pink); }
+.glass-card { background: var(--glass-bg); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border: var(--glass-border); border-radius: var(--radius-md); box-shadow: var(--glass-shadow); padding: var(--spacing-md); position: relative; overflow: hidden; }
+.btn-primary { background: rgba(var(--accent-blue-rgb), 0.05); color: var(--accent-blue); border: 1px solid var(--accent-blue); padding: 0.75rem 1.5rem; font-family: var(--font-display); font-weight: bold; text-transform: uppercase; border-radius: var(--radius-sm); transition: all 0.2s ease; display: block; text-align: center; }
+.btn-primary:hover { background: rgba(var(--accent-blue-rgb), 0.2); box-shadow: var(--neon-glow-blue); transform: translateY(-2px); }
+.full-width { width: 100%; }
+.logger-card { max-width: 600px; margin: 0 auto; }
+.input-group-dark { background: rgba(0,0,0,0.3); padding: var(--spacing-sm); border-radius: var(--radius-sm); margin-bottom: var(--spacing-sm); }
+.cyber-select { background: #000; color: var(--accent-blue); padding: 10px; border: 1px solid var(--accent-blue); width: 100%; margin-bottom: 15px; font-family: var(--font-display); }
+.logger-controls { display: flex; gap: 10px; align-items: center; justify-content: space-between; }
+.cyber-input { width: 80px; padding: 10px; background: #000; color: #fff; border: 1px solid var(--accent-blue); text-align: center; }
+.user-info { display: flex; align-items: center; gap: 1rem; }
+.level-badge { background: var(--accent-pink); color: #fff; padding: 2px 8px; border-radius: 4px; font-family: var(--font-mono); font-size: 0.8rem; box-shadow: var(--neon-glow-pink); transition: transform 0.2s ease, box-shadow 0.2s ease; }
