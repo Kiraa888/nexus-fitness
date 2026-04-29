@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEXUS FITNESS | Level Up Your Grind</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@400;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/effects.css">
+</head>
+<body class="cyber-theme">
+    <div class="cyber-grid-bg" aria-hidden="true"></div>
+
+    <div id="app-wrapper">
+        <header class="top-nav">
+            <div class="brand">
+                <span class="neon-text-blue">NEXUS</span><span class="neon-text-pink">FITNESS</span>
+            </div>
+            <nav class="main-menu">
+                <button class="nav-btn active" data-target="dashboard-view">Dashboard</button>
+                <button class="nav-btn" data-target="logger-view">Log Workout</button>
+                <button class="nav-btn" data-target="progress-view">Progress</button>
+            </nav>
+            <div class="user-profile-widget">
+                <div class="user-info">
+                    <span class="username">Operative</span>
+                    <span class="level-badge">LVL 1</span>
+                </div>
+            </div>
+        </header>
+
+        <main id="main-content">
+            <section id="dashboard-view" class="view-section active">
+                <div class="dashboard-grid">
+                    <article class="glass-card panel-anatomy">
+                        <h2 class="panel-title">Bio-Scan</h2>
+                        <div id="anatomy-container" class="anatomy-placeholder">
+                            <p class="mono-text" style="color: var(--accent-blue); text-align: center; margin-top: 50%;">[ SYSTEM: AWAITING WORKOUT DATA ]</p>
+                        </div>
+                    </article>
+
+                    <article class="glass-card panel-stats">
+                        <div class="xp-container">
+                            <div class="xp-header">
+                                <span class="mono-text text-accent">XP</span>
+                                <span class="mono-text">0 / 500</span>
+                            </div>
+                            <div class="xp-bar-track">
+                                <div class="xp-bar-fill" style="width: 0%;"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="stats-grid">
+                            <div class="stat-box">
+                                <span class="stat-label">Workouts</span>
+                                <span class="stat-value display-text" id="stat-workouts">0</span>
+                            </div>
+                            <div class="stat-box">
+                                <span class="stat-label">Streak</span>
+                                <span class="stat-value display-text" id="stat-streak">0<span class="stat-unit">d</span></span>
+                            </div>
+                            <div class="stat-box">
+                                <span class="stat-label">Volume (kg)</span>
+                                <span class="stat-value display-text" id="stat-volume">0k</span>
+                            </div>
+                            <div class="stat-box">
+                                <button class="btn-primary glow-effect" id="btn-quick-start">+ INIT WORKOUT</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="glass-card panel-heatmap">
+                        <h3 class="panel-title">System Status (Logs)</h3>
+                        <div class="heatmap-track" id="weekly-heatmap">
+                            <p class="mono-text text-secondary">All systems nominal. Ready to track.</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section id="logger-view" class="view-section hidden"></section>
+
+            <section id="progress-view" class="view-section hidden">
+                 <div class="glass-card" style="text-align: center; padding: var(--spacing-xl);">
+                    <h2 class="neon-text-pink display-text">PROGRESS UPLINK OFFLINE</h2>
+                    <p class="mono-text" style="margin-top: 1rem;">Log more workouts to generate visual data.</p>
+                 </div>
+            </section>
+        </main>
+    </div>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
