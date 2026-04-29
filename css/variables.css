@@ -1,0 +1,16 @@
+:root {
+  --bg-dark: #1a0b2e;
+  --accent-blue: #00d4ff; --accent-blue-rgb: 0, 212, 255;
+  --accent-pink: #ff006e; --accent-pink-rgb: 255, 0, 110;
+  --accent-yellow: #ffbe0b;
+  --card-dark-rgb: 37, 23, 64;
+  --text-primary: #e0e0e0; --text-secondary: #a0a0a0;
+  --font-display: 'Orbitron', sans-serif; --font-body: 'Rajdhani', sans-serif; --font-mono: 'Share Tech Mono', monospace;
+  --neon-glow-blue: 0 0 10px rgba(var(--accent-blue-rgb), 0.5), 0 0 20px rgba(var(--accent-blue-rgb), 0.3);
+  --neon-glow-pink: 0 0 10px rgba(var(--accent-pink-rgb), 0.5), 0 0 20px rgba(var(--accent-pink-rgb), 0.3);
+  --glass-bg: rgba(var(--card-dark-rgb), 0.6);
+  --glass-border: 1px solid rgba(255, 255, 255, 0.1);
+  --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+  --radius-sm: 4px; --radius-md: 8px; --radius-pill: 50px;
+  --spacing-sm: 1rem; --spacing-md: 1.5rem; --spacing-lg: 2rem; --spacing-xl: 3rem;
+}
