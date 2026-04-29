@@ -1,0 +1,12 @@
+export const ACTIONS = {
+    LOG_WORKOUT: 'LOG_WORKOUT',
+    APP_ERROR: 'APP_ERROR'
+};
+
+export const GAME_CONFIG = {
+    BASE_XP_REQ: 500,
+    XP_MULTIPLIER: 1.5,
+    VOL_DIVISOR: 10,
+    BONUS_SETS_THRESHOLD: 3,
+    BONUS_XP_AMOUNT: 20
+};
