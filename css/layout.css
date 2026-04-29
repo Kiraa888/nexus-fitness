@@ -1,0 +1,11 @@
+body { color: var(--text-primary); font-family: var(--font-body); }
+#app-wrapper { max-width: 1440px; margin: 0 auto; padding: 0 var(--spacing-lg); display: flex; flex-direction: column; height: 100vh; }
+.top-nav { display: flex; justify-content: space-between; align-items: center; padding: var(--spacing-md) 0; border-bottom: 1px solid rgba(var(--accent-blue-rgb), 0.2); margin-bottom: var(--spacing-md); }
+.brand { font-family: var(--font-display); font-size: 1.5rem; font-weight: 900; letter-spacing: 2px; }
+.main-menu { display: flex; gap: var(--spacing-md); }
+.nav-btn { color: var(--text-secondary); font-family: var(--font-display); font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; padding: 0.5rem 1rem; transition: all 0.3s ease; }
+.nav-btn:hover, .nav-btn.active { color: var(--accent-blue); text-shadow: var(--neon-glow-blue); }
+#main-content { flex-grow: 1; position: relative; }
+.view-section { display: none; opacity: 0; }
+.view-section.active { display: block; opacity: 1; animation: fadeIn 0.4s ease-out forwards; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
